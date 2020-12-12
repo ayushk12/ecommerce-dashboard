@@ -1,25 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import { Component } from 'react';
+import { Container, Nav } from 'bootstrap';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <Container>
+        <Nav className="navbar navbar-expand-lg fixed-top is-white is-dark-text">
+          <div className="navbar-brand h1 mb-0 text-large font-medium">
+            Online Retail Dashboard
+          </div>
+          <div className="navbar-nav ml-auto">
+            <div className="user-detail-section">
+              <span className="pr-2">Hi, Ayush</span>
+              <span className="img-container">
+                <img src="" className="rounded-circle" alt="user" />
+              </span>
+            </div>
+          </div>
+        </Nav>
+      </Container>
+    );
+  }
 }
 
 export default App;
